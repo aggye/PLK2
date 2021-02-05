@@ -1,0 +1,68 @@
+/*
+ * Emerald is a simple blog theme built for Jekyll.
+ */
+
+/*- Base reset -*/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*- Base color -*/
+
+$main-color: #7d837d;
+$background-color: #f7f2f2;
+$text-color: #241c1c;
+$header-color: #fc0f0f;
+
+/*- Base settings -*/
+
+html {
+	background-color: $background-color;
+	font-size: 16px;
+	@media (min-width: 940px) {
+		font-size: 18px;
+	}
+	line-height: 1.5;
+	color: $text-color;
+}
+
+.column {
+	float: left;
+	width: 70%;
+	padding: 10px;
+	height: 370px; 
+  }
+
+  .column2 {
+	float: left;
+	width: 30%;
+	padding: 10px;
+	height: 370px; 
+  }
+
+  .column2 img{
+	width: 100%;
+	height: 100%; 
+	padding: 15px;
+	filter: grayscale(25%);
+  }
+
+/*- Link -*/
+a {
+	color: $main-color;
+	text-decoration: none;
+	font-weight: 700;
+	&:hover,
+	&:focus {
+		color: darken($main-color, 5%);
+	}
+}
